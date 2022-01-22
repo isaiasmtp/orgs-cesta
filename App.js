@@ -14,9 +14,9 @@ export default function App() {
   if (!fontsLoaded) return <AppLoading />
 
   return (
-    <SafeAreaView>
+    <View style={{flex: 1}}>
       <StatusBar />
       <Cesta {...mock} />
-    </SafeAreaView>
+    </View>
   );
 }

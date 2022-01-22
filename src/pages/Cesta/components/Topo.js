@@ -1,9 +1,9 @@
 import { Dimensions, Image, StyleSheet, View } from "react-native";
 import CustomText from "../../../components/CustomText";
 import topo from '../../../../assets/topo.png'
-import cesta from "../../../mocks/cesta";
 
 const width = Dimensions.get('screen').width;
+const height = 578 / 768 * width /2;
 
 export default function Topo({title}) {
     return <View>
@@ -15,16 +15,16 @@ export default function Topo({title}) {
 const styles = StyleSheet.create({
     topo: {
         width: "100%",
-        height: 578 / 768 * width
+        height: height,
     },
     title: {
         width: "100%",
+        justifyContent:"center",
         position: "absolute",
         textAlign: "center",
         fontSize: 20,
-        lineHeight: 26,
+        lineHeight: height,
         color: "white",
         fontWeight: "bold",
-        padding: 30,
     }
 })
